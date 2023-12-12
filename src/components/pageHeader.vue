@@ -1,30 +1,32 @@
 <script>
-import { store } from "../store.js" //state management
 import navbar from "./navbar.vue";
 
 export default {
     components: {
-        navbar
+        navbar,
     },
     data() {
-        return {
-            store
-        }
+        return {};
     },
     methods: {
 
     },
-    mounted() {
-
-    }
 }
 </script>
 
 <template>
-    <header class="container mx-auto">
-        <div class="mt-5 flex justify-between items-center">
-            <img id="logo-iA" src="/img/logo-default.png" alt="">
+    <header class="-z-100">
+        <div class="mt-5 flex justify-around items-center">
             <navbar />
+        </div>
+        <div class="h-[80vh] w-[60vw] absolute hero-custom">
+            <h1 class="text-[120px]">TESTO</h1>
+            <p class="text-[25px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta doloribus tenetur,
+                dignissimos iste quis<br>
+                esse, alias quae, error voluptatum quos ipsa magnam at ducimus hic eveniet officia eligendi soluta
+                illum.
+            </p>
+            <button class="container text-[25px] bg-blue-500 h-[110px] w-[300px]">REGISTER NOW</button>
         </div>
     </header>
 </template>
@@ -32,5 +34,15 @@ export default {
 <style scoped>
 #logo-iA {
     width: 15%;
+}
+
+.hero-custom {
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 </style>

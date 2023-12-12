@@ -1,14 +1,14 @@
 <script>
-import navbar from "./components/navbar.vue"
-import pageHeader from "./components/pageHeader.vue";
 
-import { store } from "./store.js" //state management
+import pageMain from "./components/pageMain.vue";
+import navbar from "./components/navbar.vue"
+import { store } from "./store.js"
+import swiperCarousel from "./components/swiperCarousel.vue";
 
 export default {
   components: {
-    navbar,
-    pageHeader
-
+    swiperCarousel,
+    pageMain,
   },
   data() {
     return {
@@ -25,10 +25,12 @@ export default {
     }
   }
 }
+
 </script>
 
 <template>
-  <pageHeader />
+  <swiperCarousel />
+  <pageMain />
 </template>
 
 <style scoped></style>
