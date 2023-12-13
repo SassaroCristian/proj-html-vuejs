@@ -5,13 +5,13 @@
     </div>
     <div>
         <a href="#">
-            <font-awesome-icon class="fa-xl" icon="fa-solid fa-magnifying-glass" />
+            <font-awesome-icon class=" text-white fa-2xl " icon="fa-solid fa-magnifying-glass" />
         </a>
         <a href="#">
-            <font-awesome-icon class="fa-xl pl-10 pr-10" icon="fa-solid fa-bag-shopping" />
+            <font-awesome-icon class="  text-white fa-2xl pl-10 pr-10" icon="fa-solid fa-bag-shopping" />
         </a>
         <a href="#">
-            <font-awesome-icon class="fa-xl" icon="fa-solid fa-bars" />
+            <font-awesome-icon class="fa-2xl text-white" icon="fa-solid fa-bars" />
         </a>
     </div>
 </template>

@@ -9,13 +9,17 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
     faMagnifyingGlass,
     faBagShopping,
-    faBars
+    faBars,
+    faCheck,
+    faXmark
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
     faMagnifyingGlass,
     faBagShopping,
-    faBars
+    faBars,
+    faCheck,
+    faXmark
 )
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
