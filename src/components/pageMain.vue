@@ -37,7 +37,7 @@ export default {
 <template>
     <div class="mt-32 mx-20">
         <div class="flex justify-between text-center">
-            <div class="p-20 bg-[color:#F2F8FC]" v-for="(card, index) in cards" :key="index">
+            <div class="p-[4%] bg-[color:#F2F8FC]" v-for="(card, index) in cards" :key="index">
                 <img id="card-img" class="mx-auto" :src="card.image" alt="Card Image">
                 <h3 class="mt-10">{{ card.title }}</h3>
             </div>

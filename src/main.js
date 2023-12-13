@@ -11,7 +11,12 @@ import {
     faBagShopping,
     faBars,
     faCheck,
-    faXmark
+    faXmark,
+    faClock,
+    // faPhoneArrowDownLeft,
+    // faTwitter,
+    // faSquareFacebook,
+    // faInstagram,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -19,7 +24,14 @@ library.add(
     faBagShopping,
     faBars,
     faCheck,
-    faXmark
+    faXmark,
+    faClock,
+    // faPhoneArrowDownLeft,
+    // faTwitter,
+    // faSquareFacebook,
+    // faInstagram,
 )
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
+
+
