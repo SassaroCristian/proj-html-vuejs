@@ -37,3 +37,15 @@ export const carouselData3 = [
         image: './img/h5-client-5.png'
     }
 ]
+
+export const debug = [
+
+    { image: './img/landing-carousel-gallery-img-1.jpg' },
+    { image: './img/landing-carousel-gallery-img-2.jpg' },
+    { image: './img/landing-carousel-gallery-img-3.jpg' },
+    { image: './img/landing-carousel-gallery-img-4.jpg' },
+    { image: './img/landing-carousel-gallery-img-5.jpg' },
+    { image: './img/landing-carousel-gallery-img-2.jpg' },
+    { image: './img/landing-carousel-gallery-img-7.jpg' }
+
+]

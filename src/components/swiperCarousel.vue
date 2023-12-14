@@ -4,6 +4,7 @@ import { Navigation, Pagination, A11y, Virtual } from 'swiper/modules';
 import { carouselData } from '../assets/carouselData';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import pageHeader from "./pageHeader.vue";
+import { infoCard } from '../assets/infoCard';
 
 import 'swiper/css';
 import 'swiper/css/bundle';

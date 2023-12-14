@@ -1,5 +1,5 @@
 <template>
-    <img id="logo-iA" src="/img/logo-default.png" alt="">
+    <img id="logo-iA" src="/img/logo-light.png" alt="">
     <div class="z-[50]" v-for="link in navData">
         <a class="text-2xl text-white" href="#">{{ link.navLink.toUpperCase() }}</a>
     </div>

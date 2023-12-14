@@ -1,55 +1,34 @@
-<template>
-    <vue-carousel :navigation-enabled="true">
-        <div class="example-slide" v-for="(slide, index) in slidesData" :key="index">
-            <div class="flex space-x-4">
-                <div v-for="card in slide.cards" :key="card.id" class="h-[80vh] w-[450px] border border-black border-[1px]">
-                    <img :src="card.image" alt="">
-                    <div class="flex justify-between m-10">
-                        <h3>{{ card.title }}</h3>
-                        <p>{{ card.price }}</p>
-                    </div>
-                    <p class="ml-10">{{ card.fullName }}</p>
-                    <p class="m-10">{{ card.description }}</p>
-                    <div class="flex">
-                        <div class="flex">
-                            <font-awesome-icon class="" :icon="card.userIcon" />
-                            <p>{{ card.countUser }}</p>
-                        </div>
-                        <div>
-                            <font-awesome-icon class="" :icon="card.labelIcon" />
-                            <p>{{ card.label }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </vue-carousel>
-</template>
 
-<script>
-import { ref } from 'vue';
-import { Carousel } from 'vue-carousel';
-import { infoCard } from '../assets/infoCard';
+<script setup>
 
-export default {
-    components: {
-        'vue-carousel': Carousel,
-    },
-    setup() {
-        const slidesData = ref(infoCard[0].slides);
+import { Navigation, Pagination, A11y, Virtual } from 'swiper/modules';
+import { debug } from '../assets/carouselData';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/bundle';
 
-        return {
-            slidesData,
-        };
-    },
-};
 </script>
 
-<style scoped>
-.example-slide {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-height: 10rem;
+<template>
+    <div id="back-g-carouselCard" class="flex items-center justify-center h-full">
+        <Swiper class="text-white" :slides-per-view="3" :space-between="30"
+            :modules="[Navigation, Pagination, A11y, Virtual]" :pagination="{ clickable: true, dynamicBullets: true }"
+            grab-cursor>
+            <SwiperSlide v-for="data2 in debug" :key="data2">
+                <div class="flex flex-col items-center ">
+                    <img class="" :src="data2.image" alt="">
+                </div>
+            </SwiperSlide>
+        </Swiper>
+        <div class="swiper-pagination swiper-pagination-custom" style=""></div>
+    </div>
+</template>
+
+
+<style>
+#back-g-carouselCard {
+    background-image: url('../../public/img/background-pattern.jpg');
+    height: 100vh;
+    width: 100vw;
 }
 </style>
